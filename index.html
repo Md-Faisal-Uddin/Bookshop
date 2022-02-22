@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/tracking.png">
+    <title>Bookshop</title>
+    <script src="https://kit.fontawesome.com/9e715ebb58.js" crossorigin="anonymous"></script>
+    <style>
+        /* fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+        /* Common styles */
+        body{
+            font-family: 'Poppins', sans-serif;
+            background-color: #FFFFFF;
+        }
+        
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		img{
+			display: block;
+			max-width: 100%;
+		}
+		.menu{
+			background-color: cadetblue;
+			
+		}
+		.menu ul{
+			display: flex;
+			justify-content: center;
+			
+		}
+		.menu ul li{
+		
+			list-style: none;
+		}
+
+		.menu ul li a{
+			color: #fff;
+
+		
+			text-decoration: none;		
+			padding: 10px 25px;
+			
+			
+			display: block;
+
+		
+			text-transform:uppercase;
+			border-top: 2px solid transparent;
+			border-bottom: 2px solid transparent;
+			font-family: 'Open Sans', sans-serif;
+		}
+		
+		.menu ul li a:hover{
+			border-color: wheat;
+			border-style: hidden;
+		}
+
+        .container{
+            width: 70%;    
+            background: #FFFFFF;
+            margin: 0 auto  ;
+            align-items: center;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+
+        /* Influencer-products */
+        
+        main{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Start-journy */
+
+        .Start-journy{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-column-gap: 220px;
+        }
+        .about-journy a{
+         background: #E02C6D;
+         color: #FFFFFF;
+         border-radius: 15px ;
+         padding: 8px;
+         font-size: 12px ;
+         border: 1px solid rgb(228, 13, 13)           ;
+        }
+        .about-journy a:hover{
+            background-color: black;
+            color: white    ;
+               
+        }
+        .journy-capture img{
+            width: 250px;
+            transition: 0.2s ease 0s;
+        }
+        .journy-capture img:hover{
+            transform: scale(1.3);
+        }
+
+        /* products */
+        .products{
+            width: 100%;           
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+            margin-bottom: 20px;
+        
+        }
+        .section-title{
+            text-align: center;
+            padding: 20px ;
+        
+
+        }
+        .image-container{
+            width: 329px;
+            height: 476px;
+            background: #f0ebeb;
+            border-radius: 5px;
+           
+            
+        }
+        .product-images{
+            position: relative;
+        }
+        .product-images img{
+            height: 200px;
+            width: 250px;
+            border-radius: 5px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            transition: .2s ease 0s    ;
+
+        }
+        .product-images img:hover{
+            transform: scale(1.1);
+        }
+        .image-container{
+            width: 274px;
+            height: 520px;
+            margin: 0 auto;
+            position: relative;
+            border-radius: 10px ;
+        }
+        .produc-info {
+         position: absolute;
+         top: 200px;
+        left: 10px;
+        margin-top: 10px;
+        }       
+        .ratings {
+            position: absolute;
+            top: 300px;
+            left: 10px;
+            color: goldenrod;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+            grid-column-gap: 20px;
+        }
+        .rating-text{
+            margin-bottom: -15px  ;
+        }
+        .footer{
+            width: 100%;
+            padding: 20px 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        .footer p{
+            font-size: 10px;
+            
+        }
+        .bonus{
+            border: 2px solid rgb(191, 194, 194)   ;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-around ;
+            align-items: center;
+            flex-wrap: nowrap;
+            padding: 18px;
+            margin-bottom: 20px;
+        }
+        .library{
+            width: 45%;
+        }
+        .library-details{
+            width: 45%;
+        }
+        .library img{
+            width: 250px ;
+            border-radius: 15px;
+           transition: .2s ease 0s  ;
+        }
+        .library img:hover{
+            transform: scale(1.1) ;
+        }
+    </style>
+</head>
+<body>
+    <main >
+        <!-- influencer -->
+        <section class="container">
+            <div class="menu">
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-address-card"></i> About</a></li>
+                    <li><a href="#"><i class="fas fa-book-open"></i> Books</a></li>
+                    <li class="icon"><a href="#"> Services</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        
+        <!-- fontawsome -->
+        <script src="https://kit.fontawesome.com/9e715ebb58.js" crossorigin="anonymous"></script>
+        </section>
+        
+        <!-- products -->
+        <section class="container">
+            <h1 class="section-title">Popular Collection</h1>
+                <div class="products">
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="product-images">
+                                <img src="images/Book 1.jpg" alt="">
+                            </div>
+                            <div class="produc-info">
+                                <h2>Book-1</h2>
+                                <h4>$50.48</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="icon">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="rating-text">
+                                    <h5><span style="color: black;">4.99</span></h5>
+                                </div>
+                                <p><span style="color: black;">Wordwide shifting available
+                                    Buyers protection possible!</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="product-images">
+                                <img src="images/Book 2.jpg" alt="">
+                            </div>
+                            <div class="produc-info">
+                                <h2>Book-2</h2>
+                                <h4>$50.48</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="icon">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="rating-text">
+                                    <h5><span style="color: black;">4.99</span></h5>
+                                </div>
+                                <p><span style="color: black;">Wordwide shifting available
+                                    Buyers protection possible!</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="product-images">
+                                <img src="images/Book 3.jpg" alt="">
+                            </div>
+                            <div class="produc-info">
+                                <h2>Book-3</h2>
+                                <h4>$50.48</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="icon">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="rating-text">
+                                    <h5><span style="color: black;">4.99</span></h5>
+                                </div>
+                                <p><span style="color: black;">Wordwide shifting available
+                                    Buyers protection possible!</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="product-images">
+                                <img src="images/Book 4.jpg" alt="">
+                            </div>
+                            <div class="produc-info">
+                                <h2>Book 4</h2>
+                                <h4>$50.48</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="icon">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="rating-text">
+                                    <h5><span style="color: black;">4.99</span></h5>
+                                </div>
+                                <p><span style="color: black;">Wordwide shifting available
+                                    Buyers protection possible!</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="product-images">
+                                <img src="images/Book 5.jpg" alt="">
+                            </div>
+                            <div class="produc-info">
+                                <h2>Book 5</h2>
+                                <h4>$50.48</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="icon">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="rating-text">
+                                    <h5><span style="color: black;">4.99</span></h5>
+                                </div>
+                                <p><span style="color: black;">Wordwide shifting available
+                                    Buyers protection possible!</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="product-images">
+                                <img src="images/Book 6.jpg" alt="">
+                            </div>
+                            <div class="produc-info">
+                                <h2>Book-6</h2>
+                                <h4>$50.48</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="icon">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="rating-text">
+                                    <h5><span style="color: black;">4.99</span></h5>
+                                </div>
+                                <p><span style="color: black;">Wordwide shifting available
+                                    Buyers protection possible!</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="product-images">
+                                <img src="images/Book 7.jpg" alt="">
+                            </div>
+                            <div class="produc-info">
+                                <h2>Book-7</h2>
+                                <h4>$50.48</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="icon">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="rating-text">
+                                    <h5><span style="color: black;">4.99</span></h5>
+                                </div>
+                                <p><span style="color: black;">Wordwide shifting available
+                                    Buyers protection possible!</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="product-images">
+                                <img src="images/Book 8.jpg" alt="">
+                            </div>
+                            <div class="produc-info">
+                                <h2>Book-8</h2>
+                                <h4>$50.48</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="icon">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="rating-text">
+                                    <h5><span style="color: black;">4.99</span></h5>
+                                </div>
+                                <p><span style="color: black;">Wordwide shifting available
+                                    Buyers protection possible!</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="image-container">
+                            <div class="product-images">
+                                <img src="images/Book 9.jpg" alt="">
+                            </div>
+                            <div class="produc-info">
+                                <h2>Book-9</h2>
+                                <h4>$50.48</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="icon">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="rating-text">
+                                    <h5><span style="color: black;">4.99</span></h5>
+                                </div>
+                                <p><span style="color: black;">Wordwide shifting available
+                                    Buyers protection possible!</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+        <section class="container">
+            <div class="bonus">
+                <div class="library">
+                    <img src="images/1.jpg" alt="">
+                </div>
+                <div class="library-details">
+                    <h2>Book Library</h2>
+                    <p>A library is a collection of materials, books or media that are easily accessible for use and not just for display purposes.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <section>
+        <div class="footer">
+            <h2>Bookshops</h2>
+            <p>Copyright © 2020 influencer products <br>
+                All rights reserved</p>
+        </div>
+    </section>
+
+</body>
+</html>
